@@ -6,3 +6,7 @@
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.ttf");
 }
+
+#__nuxt {
+    min-height: 100vh;
+}
