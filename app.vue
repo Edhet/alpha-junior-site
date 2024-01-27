@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   bodyAttrs: {
-    class: 'bg-black text-white flex flex-col min-h-screen'
+    class: 'scroll-smooth bg-black text-white flex flex-col min-h-screen'
   }
 });
 </script>
