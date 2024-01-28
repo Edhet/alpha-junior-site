@@ -4,5 +4,5 @@ export interface Email {
     subject: string,
     text: string,
     budget : number,
-    otherCollege: boolean,
+    otherAcademic: boolean,
 }
