@@ -7,5 +7,8 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     }
+  },
+  runtimeConfig: {
+    emailPass: process.env.EMAIL_PASS
   }
 })
