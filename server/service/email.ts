@@ -1,10 +1,23 @@
+import nodemailer from 'nodemailer'
+import type { Email } from '~/interfaces/email'
 
-import type {Email} from '~/interfaces/email'
 
-export const sendEmail = async (event: any, smtp: any) => {
+const smtp = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+        user: "alphajunior@uniriotec.br",
+        pass: useRuntimeConfig().emailPass
+    },
+    tls: {
+        rejectUnauthorized: false
+    }
+})
+
+export const sendEmail = async (event: any) => {
     const body = await readBody(event)
     const email: Email = JSON.parse(body);
-    console.log()
     try {
         await smtp.sendMail({
             from: email.from,
