@@ -1,5 +1,5 @@
 <template>
-    <footer class="flex flex-col md:flex-row gap-8 justify-between mx-auto w-11/12 md:w-4/5 pt-12 pb-16 p-4 lg:px-24 border-t border-zinc-900">
+    <footer class="flex flex-col md:flex-row gap-8 justify-between mx-auto w-11/12 md:w-4/5 pt-12 pb-16 p-4 lg:px-24 border-t border-white/20">
         <div class="flex gap-8 my-auto">
             <a class="hover:text-neutral-400 transition-all" href="https://www.linkedin.com/company/alpha-junior/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">

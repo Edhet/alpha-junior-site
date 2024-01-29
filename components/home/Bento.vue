@@ -45,7 +45,7 @@
             </div>
         </div>
         <div>
-            <div class="flex col-span-2 p-6 m-1 md:m-3 border border-zinc-900 rounded-lg">
+            <div class="flex flex-col md:flex-row col-span-2 gap-4 p-6 m-1 md:m-3 border border-zinc-900 rounded-lg">
                 <div class="mr-2">
                     <div class="flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people-fill my-auto" viewBox="0 0 16 16">
@@ -55,7 +55,7 @@
                     </div>
                     <p class="font-light italic">Veja quem são nossos colaboradores, suas áreas de atuação e quais projetos já realizamos. </p>
                 </div>
-                <NuxtLink class="my-auto h-fit ml-auto py-2 px-4 rounded-3xl text-black bg-white hover:bg-neutral-400 transition-all" to="/portifolio">Conhecer</NuxtLink>
+                <NuxtLink class="my-auto h-fit w-fit md:ml-auto py-2 px-4 rounded-3xl text-black bg-white hover:bg-neutral-400 transition-all" to="/portifolio">Conhecer</NuxtLink>
             </div>
         </div>
     </section>
