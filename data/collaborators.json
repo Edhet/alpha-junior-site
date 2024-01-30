@@ -2,92 +2,79 @@
     {
         "name": "Antonio Barbosa",
         "occupation": "Gestão de Pessoas",
-        "pictureUrl": "~/assets/images/employees_gallery/antonio_barbosa.jpg",
-        "email": "antonio.barbosa@edu.unirio.br",
+        "pictureUrl": "/img/employees_gallery/antonio_barbosa.jpg",
         "linkedin": "https://www.linkedin.com/in/antonio-ferreira-de-castro-barbosa-104a01253"
     },
     {
+        "name": "Maicon Carreira",
+        "occupation": "Gestão de Pessoas",
+        "pictureUrl": "/img/employees_gallery/maycon_carreira.jpg",
+        "linkedin": "https://www.linkedin.com/in/maycon-carreira"
+    },
+    {
         "name": "Barbara Miguez",
-        "occupation": "Desenvolvedor Front-end",
-        "pictureUrl": "~/assets/images/employees_gallery/barbara_miguez.jpg",
-        "email": "email@provedor.com",
+        "occupation": "Desenvolvedora Front-end",
+        "pictureUrl": "/img/employees_gallery/barbara_miguez.jpg",
         "linkedin": "https://www.linkedin.com/in/barbara-miguez-de-azevedo"
+    },
+    {
+        "name": "Matheus de Melo",
+        "occupation": "Desenvolvedor Front-end",
+        "pictureUrl": "/img/employees_gallery/matheus_de_melo.jpg",
+        "linkedin": "https://www.linkedin.com/in/mathmelo"
     },
     {
         "name": "Diogo Arruda",
         "occupation": "Desenvolvedor Back-end",
-        "pictureUrl": "~/assets/images/employees_gallery/diogo_arruda.jpg",
-        "email": "diogomarinho222@gmail.com",
+        "pictureUrl": "/img/employees_gallery/diogo_arruda.jpg",
         "linkedin": "https://www.linkedin.com/in/diogoarrudamarinho/"
-    },
-    {
-        "name": "Isabelle Ferreira",
-        "occupation": "Desenvolvedor Full-stack",
-        "pictureUrl": "~/assets/images/employees_gallery/isabelle_ferreira.jpg",
-        "email": "isabelle.f.araujo@edu.unirio.br",
-        "linkedin": "https://www.linkedin.com/in/isabelle-ferreira-de-araujo"
-    },
-    {
-        "name": "Jenifer Brito",
-        "occupation": "Desenvolvedor Full-stack",
-        "pictureUrl": "~/assets/images/employees_gallery/jenifer_brito.jpg",
-        "email": "",
-        "linkedin": "www.linkedin.com/in/jenifer-gonçalves-brito"
     },
     {
         "name": "João Campbell",
         "occupation": "Desenvolvedor Back-end",
-        "pictureUrl": "~/assets/images/employees_gallery/joao_campbell.jpg",
-        "email": "joao.campbell@edu.unirio.br",
+        "pictureUrl": "/img/employees_gallery/joao_campbell.jpg",
         "linkedin": "https://www.linkedin.com/in/joão-campbell-6b9442245/"
     },
     {
         "name": "Lucca Braga",
         "occupation": "Desenvolvedor Back-end",
-        "pictureUrl": "~/assets/images/employees_gallery/lucca_braga.jpg",
-        "email": "lucca.carvalho@edu.unirio.br",
+        "pictureUrl": "/img/employees_gallery/lucca_braga.jpg",
         "linkedin": "https://www.linkedin.com/in/lucca-braga-carvalho-094765286/"
+    },
+    {
+        "name": "Isabelle Ferreira",
+        "occupation": "Desenvolvedora Full-stack",
+        "pictureUrl": "/img/employees_gallery/isabelle_ferreira.jpg",
+        "linkedin": "https://www.linkedin.com/in/isabelle-ferreira-de-araujo"
+    },
+    {
+        "name": "Jenifer Brito",
+        "occupation": "Desenvolvedora Full-stack",
+        "pictureUrl": "/img/employees_gallery/jenifer_brito.jpg",
+        "linkedin": "https://www.linkedin.com/in/jenifer-gonçalves-brito"
     },
     {
         "name": "Lohan Alexandre",
         "occupation": "Desenvolvedor Full-stack",
-        "pictureUrl": "assets/images/logo_alpha.png",
-        "email": "",
+        "pictureUrl": "/img/logo_alpha.png",
         "linkedin": "https://www.linkedin.com/in/lohan-alexandre-353285183/"
-    },
-    {
-        "name": "Matheus de Melo",
-        "occupation": "Desenvolvedor Front-end",
-        "pictureUrl": "~/assets/images/employees_gallery/matheus_de_melo.jpg",
-        "email": "matheus.melo@edu.unirio.br",
-        "linkedin": "https://www.linkedin.com/in/mathmelo"
-    },
-    {
-        "name": "Maicon Carreira",
-        "occupation": "Gestão de Pessoas",
-        "pictureUrl": "~/assets/images/employees_gallery/maycon_carreira.jpg",
-        "email": "",
-        "linkedin": "https://www.linkedin.com/in/maycon-carreira"
     },
     {
         "name": "Pablo Martins",
         "occupation": "Desenvolvedor Full-stack",
-        "pictureUrl": "~/assets/images/employees_gallery/pablo_martins.jpg",
-        "email": "",
+        "pictureUrl": "/img/employees_gallery/pablo_martins.jpg",
         "linkedin": ""
     },
     {
         "name": "Vitor Duarte",
         "occupation": "Desenvolvedor Full-stack",
-        "pictureUrl": "~/assets/images/employees_gallery/vitor_duarte.jpg",
-        "email": "vitorduarte@edu.unirio.br",
+        "pictureUrl": "/img/employees_gallery/vitor_duarte.jpg",
         "linkedin": "https://www.linkedin.com/in/vitor-duarte93/"
     },
     {
-        "name": "Eduardo",
-        "occupation": "Front-end",
-        "pictureUrl": "assets/images/logo_alpha.png",
-        "email": "",
+        "name": "Eduardo Pinheiro",
+        "occupation": "Desenvolvedor Full-stack",
+        "pictureUrl": "/img/logo_alpha.png",
         "linkedin": ""
     }
 ]

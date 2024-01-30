@@ -26,7 +26,7 @@
                 </svg>
                 <p class="mx-2 text-base font-bold">Alpha Junior</p>
             </div>
-            <p class="italic">Todos os direitos reservados</p>
+            <p class="italic">{{ new Date().getFullYear() }} - Todos os direitos reservados</p>
             <p>Avenida Pasteur, 458, Prédio CCET - 2º andar, Sala 202, Urca - Rio de Janeiro, RJ</p>
             <p>Atendimento de Segunda a Sexta de 9h às 21h</p>
         </div>

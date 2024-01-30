@@ -1,7 +1,6 @@
 export interface Collaborator {
-    name: String,
-    occupation: String, 
-    pictureUrl: String,
-    email: String,
-    linkedin: String,
+    name: string,
+    occupation: string, 
+    pictureUrl: string,
+    linkedin: string,
 }
