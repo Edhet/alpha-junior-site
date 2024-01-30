@@ -1,7 +1,7 @@
 <template>
-    <section class="relative p-4 md:p-10 flex flex-col gap-8 md:flex-row my-40 md:justify-between">
+    <section class="relative p-4 md:p-10 flex flex-col gap-8 md:flex-row my-20 md:justify-between">
 
-        <img class="absolute left-0 top-0 -z-10 object-cover w-full h-full rounded-lg brightness-50 overflow-hidden" src="~/assets/images/pexels-cottonbro-studio-7438102.jpg" alt="Pessoas em uma sala de reunião"> 
+        <img class="absolute left-0 top-0 -z-10 object-cover w-full h-full rounded-lg brightness-50 pointer-events-none overflow-hidden" src="/img/pexels-cottonbro-studio-7438102.jpg" alt="Pessoas em uma sala de reunião"> 
         
         <div class="flex flex-col justify-between min-h-full md:w-2/3">
             <div>

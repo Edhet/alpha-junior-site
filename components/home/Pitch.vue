@@ -1,6 +1,6 @@
 <template>
     <section class="w-fit flex flex-col justify-between h-[95vh] mx-auto text-center">
-        <img class="absolute top-0 left-0 w-full h-full object-cover brightness-50 -z-10" src="~/assets/images/pexels-sergei-starostin-6466141.jpg" alt="sala cheia de servidores">
+        <img class="absolute top-0 left-0 w-full h-full object-cover brightness-50 pointer-events-none -z-10" src="/img/pexels-sergei-starostin-6466141.jpg" alt="sala cheia de servidores">
 
         <div class="my-auto">
             <h1 class="whitespace-nowrap font-extrabold" style="font-size: 10vmin;">ALPHA JUNIOR</h1>

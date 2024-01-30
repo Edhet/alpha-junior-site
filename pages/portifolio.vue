@@ -5,5 +5,6 @@
 </script>
 
 <template>
-    <h1>Portifolio</h1>
+    <PortifolioProjects></PortifolioProjects>
+    <PortifolioCollaborators></PortifolioCollaborators>
 </template>
