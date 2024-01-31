@@ -20,8 +20,8 @@ const collaborators: Collaborator[] = (data as unknown) as Collaborator[]
         <div class="grid justify-center md:justify-start md:grid-cols-2 lg:grid-cols-4 gap-3 flex-wrap p-6">
             <a :href="collaborator.linkedin" class="flex w-fit p-2 hover:underline" v-for="collaborator in collaborators.sort((a, b) => a.name > b.name ? 1 : -1)">
                 <div class="mr-2 my-auto relative -z-10">
-                    <img class="w-8 h-8 rounded-full object-cover" alt="Image do colaborador" :src="collaborator.pictureUrl">
-                    <img class="absolute blur-lg top-0 left-0 w-8 h-8 rounded-full object-cover -z-20 pointer-events-none" :src="collaborator.pictureUrl">
+                    <img class="w-8 h-8 rounded-full object-cover" alt="Imagem do colaborador" :src="collaborator.pictureUrl ?? '/img/logo_alpha.png'">
+                    <img class="absolute blur-lg top-0 left-0 w-8 h-8 rounded-full object-cover -z-20 pointer-events-none" :src="collaborator.pictureUrl ?? '/img/logo_alpha.png'">
                 </div>
                 <div>
                     <p>{{ collaborator.name }}</p>

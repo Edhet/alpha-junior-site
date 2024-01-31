@@ -4,6 +4,6 @@ export default interface Project {
     name: string
     description: string
     deployUrl?: string
-    image: string
-    collaborators?: string[]
+    imageUrl: string
+    collaborators?: Collaborator[]
 }

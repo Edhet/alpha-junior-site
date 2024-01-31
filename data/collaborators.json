@@ -56,7 +56,7 @@
     {
         "name": "Lohan Alexandre",
         "occupation": "Desenvolvedor Full-stack",
-        "pictureUrl": "/img/logo_alpha.png",
+        "pictureUrl": "/img/employees_gallery/lohan_alexandre.jpg",
         "linkedin": "https://www.linkedin.com/in/lohan-alexandre-353285183/"
     },
     {
@@ -74,7 +74,7 @@
     {
         "name": "Eduardo Pinheiro",
         "occupation": "Desenvolvedor Full-stack",
-        "pictureUrl": "/img/logo_alpha.png",
-        "linkedin": ""
+        "pictureUrl": "/img/employees_gallery/eduardo_pinheiro.jpg",
+        "linkedin": "https://www.linkedin.com/in/eduardo-pinheiro-freitas/"
     }
 ]

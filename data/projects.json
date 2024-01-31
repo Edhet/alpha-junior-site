@@ -3,7 +3,16 @@
         "name": "Este Site",
         "description": "Este site feito em Nuxt com Tailwind é nosso primeiro projeto desde a reestruturação, feito como meio de contato e galeria para todos os outros projetos que ainda estão por vir.",
         "deployUrl": "/",
-        "image": "/img/projects_gallery/alpha_junior_site.png",
-        "collaborators": ["Eduardo Pinheiro Freitas", "Lohan Alexandre"]
+        "imageUrl": "/img/projects_gallery/alpha_junior_site.png",
+        "collaborators": [
+            {
+                "name": "Eduardo Pinheiro",
+                "pictureUrl": "/img/employees_gallery/eduardo_pinheiro.jpg"
+            },
+            {
+                "name": "Lohan Alexandre",
+                "pictureUrl": "/img/employees_gallery/lohan_alexandre.jpg"
+            }
+        ]
     }
 ]

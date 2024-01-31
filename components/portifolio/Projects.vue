@@ -18,19 +18,21 @@ const projects: Project[] = (data as unknown) as Project[]
         
         <div class="flex flex-col gap-12 mt-12">
             <div class="relative p-4 md:p-10 flex flex-col gap-8" v-for="project in projects">
-                
                 <div class="absolute left-0 top-0 w-full h-full -z-10 backdrop-blur-md rounded-lg"></div>
-                <img class="absolute left-0 top-0 w-full h-full object-cover -z-20 rounded-lg brightness-50 pointer-events-none overflow-hidden" :src="project.image" alt="Imagem do projeto">
+                <img class="absolute left-0 top-0 w-full h-full object-cover -z-20 rounded-lg brightness-50 pointer-events-none overflow-hidden" :src="project.imageUrl" alt="Imagem do projeto">
 
                 <div class="flex flex-col gap-2 md:w-2/3">
                     <div>
                         <h3 class="text-4xl font-bold"> {{ project.name }} </h3>
                         <p class="text-lg"> {{ project.description }} </p>
                     </div>
-                    <p v-if="project.collaborators && project.collaborators.length > 0" class="font-bold">Colaboradores do projeto: <span class="font-light">{{ project.collaborators.join(', ') }}</span></p>
+                    <div class="flex gap-4 mt-2">
+                        <div v-if="project.collaborators && project.collaborators.length > 0" v-for="collaborator in project.collaborators" class="font-bold">
+                            <img class="w-8 h-8 rounded-full object-cover" alt="Imagem do colaborador" :src="collaborator.pictureUrl ?? '/img/logo_alpha.png'" :title="collaborator.name">
+                        </div>
+                    </div>
                     <a v-if="project.deployUrl" :href="project.deployUrl" 
                     class="w-fit my-4 py-2 px-4 rounded-3xl text-black bg-white hover:bg-neutral-400 transition-all">Ver implementação</a>
-
                 </div>
             </div>
         </div>
