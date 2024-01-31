@@ -1,4 +1,4 @@
-import * as projectController from '../service/project'
+import * as projectController from '../service/project-controller'
 
 export default defineEventHandler(() => {
     return projectController.getProjects()
