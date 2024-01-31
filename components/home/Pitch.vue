@@ -4,10 +4,10 @@
 
         <div class="my-auto">
             <h1 class="whitespace-nowrap font-extrabold" style="font-size: 10vmin;">ALPHA JUNIOR</h1>
-            <div class="flex flex-col w-full justify-center mt-4 text-xl text-start font-extrabold gap-6" style="font-size: 5vmin;">
-                <p>ESBOÇO</p>
-                <p>ELABORAÇÃO</p>
-                <p>DESENVOLVIMENTO</p>
+            <div class="flex flex-col w-full justify-center mt-4 text-start font-extrabold">
+                <p style="font-size: 5vmin;">ESBOÇO</p>
+                <p style="font-size: 5vmin;">ELABORAÇÃO</p>
+                <p style="font-size: 5vmin;">DESENVOLVIMENTO</p>
             </div>
         </div>
 
