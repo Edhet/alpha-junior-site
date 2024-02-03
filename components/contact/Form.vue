@@ -3,7 +3,7 @@ import type { Email } from '~/interfaces/email'
 
 const opcoesOrcamento = getBudgetOptions()
 
-let email: Email = { from: "", subject: "", text: "", budget: "Mais de 10.000", academic: false }
+let email: Email = { from: "", subject: "", text: "", budget: "Mais de R$10.000", academic: false }
 let errorMessages: any = ref({ from: "", subject: "", text: "" })
 
 enum EmailState { READY, LOADING, SUCCESS, ERROR }
