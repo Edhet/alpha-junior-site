@@ -9,14 +9,14 @@ const projects: Project[] = (data as unknown) as Project[]
 <template>
     <section class="my-10">
         <div class="whitespace-nowrap">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill my-auto mr-2 float-start h-9 w-9 md:h-12 md:w-12" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill my-auto mr-2 float-start h-8 w-8 md:h-12 md:w-12" viewBox="0 0 16 16">
                 <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
             </svg>
-            <h1 class="text-3xl md:text-5xl font-bold">Projetos</h1>
+            <h1 class="text-4xl md:text-5xl font-bold">Projetos</h1>
         </div>
-        <p class="font-light text-lg">Os projetos que definem a nossa história como empresa.</p>
+        <p class="mt-2 text-lg">Os projetos que definem a nossa história como empresa.</p>
         
-        <div class="flex flex-col gap-12 mt-12">
+        <div class="flex flex-col gap-12 mt-6">
             <div class="relative p-4 md:p-10 flex flex-col gap-8" v-for="project in projects">
                 <div class="absolute left-0 top-0 w-full h-full -z-10 backdrop-blur-md rounded-lg"></div>
                 <img class="absolute left-0 top-0 w-full h-full object-cover -z-20 rounded-lg brightness-50 pointer-events-none overflow-hidden" :src="project.imageUrl" alt="Imagem do projeto">

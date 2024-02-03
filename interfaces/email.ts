@@ -2,6 +2,6 @@ export interface Email {
     from: string,
     subject: string,
     text: string,
-    budget : number,
+    budget : string,
     academic: boolean,
 }
