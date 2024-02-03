@@ -13,7 +13,7 @@ const EMAIL_REGEX = new RegExp("[a-z0-9]+@[a-z]+\.[a-z]{2,3}")
 let email: Email = { from: "", subject: "", text: "", budget: "Mais de 10000", academic: false }
 let errorMessages: any = ref({ from: "", subject: "", text: "" })
 
-function sendEmail() {
+async function sendEmail() {
     errorMessages.value = { from: "", subject: "", text: "" }
     validateFrom()
     validateSubject()
@@ -21,6 +21,13 @@ function sendEmail() {
 
     if (errorMessages.from.length > 0 || errorMessages.subject.length > 0 || errorMessages.text.length > 0)
         return;
+
+    const response = await $fetch('/api/contato', {
+        method: "POST",
+        body: email
+    })
+    console.log(response);
+    
 }
 
 function validateFrom() {
@@ -110,7 +117,7 @@ function validateText() {
                         </svg>
                     </span>
                 </div>
-                <label class="ml-2 cursor-pointer" for="10k">Mais de 10000</label>
+                <label class="ml-2 cursor-pointer" for="10k">Mais de 10.000</label>
             </div>
             <div class="flex">
                 <div class="relative">
@@ -121,7 +128,7 @@ function validateText() {
                         </svg>
                     </span>
                 </div>
-                <label class="ml-2 cursor-pointer" for="5k">Mais de 5000</label>
+                <label class="ml-2 cursor-pointer" for="5k">Mais de 5.000</label>
             </div>
             <div class="flex">
                 <div class="relative">
@@ -133,7 +140,7 @@ function validateText() {
                     </span>
                 </div>
 
-                <label class="ml-2 cursor-pointer" for="2k">Mais de 2500</label>
+                <label class="ml-2 cursor-pointer" for="2k">Mais de 2.500</label>
             </div>
             <div class="flex">
                 <div class="relative">
@@ -144,7 +151,7 @@ function validateText() {
                         </svg>
                     </span>
                 </div>
-                <label class="ml-2 cursor-pointer" for="0k">Menos de 2500</label>
+                <label class="ml-2 cursor-pointer" for="0k">Menos de 2.500</label>
             </div>
         </div>
 
