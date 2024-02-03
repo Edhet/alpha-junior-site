@@ -1,5 +1,6 @@
-import * as collaboratorController from '../service/collaborator-controller'
+import collaboratorsJson from '~/data/collaborators.json'
+import { Collaborator } from '~/types/collaborator';
 
 export default defineEventHandler(() => {
-    return collaboratorController.getCollaborators()
+    return collaboratorsJson as Collaborator[];
 })

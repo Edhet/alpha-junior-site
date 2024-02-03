@@ -1,5 +1,6 @@
-import * as projectController from '../service/project-controller'
+import projectsJson from '~/data/projects.json'
+import Project from '~/types/project';
 
 export default defineEventHandler(() => {
-    return projectController.getProjects()
+    return projectsJson as Project[];
 })
