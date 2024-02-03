@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer'
 import type { Email } from '~/types/email'
 import { validEmail, validString } from '~/utils/email-validation'
 
-const EMAIL_ADDRESS = "edtv2813@gmail.com"
+const EMAIL_ADDRESS = "alphajunior@uniriotec.br"
 
 const smtp = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -35,7 +35,7 @@ export default defineEventHandler(async (event) => {
 
     try {
         await smtp.sendMail(mailOptions)
-        return { success: true, message: "Email enviado com sucesso" };
+        return { error: false, code: 200, message: "Email enviado com sucesso" };
     } catch (e) {
         return { error: true, code: 500, message: "Ocorreu um erro ao enviar o email" };
     }
