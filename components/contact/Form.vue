@@ -89,6 +89,7 @@ async function sendEmail() {
         </div>
 
         <div class="mt-1">
+            <p class="mb-1 font-bold">Sou de instituição acadêmica</p>
             <div class="flex">
                 <div class="relative">
                     <input class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-white/20 transition-all checked:border-white checked:bg-white" v-model="email.academic" id="academic" type="checkbox">
@@ -98,7 +99,7 @@ async function sendEmail() {
                         </svg>
                     </span>
                 </div>
-                <label class="ml-2 cursor-pointer font-bold" for="academic">Sou de instituição acadêmica</label>
+                <label class="ml-2 cursor-pointer" for="academic">Sim</label>
             </div>
         </div>
         <button class="my-4 py-2 px-4 rounded-3xl transition-all text-black" :class="emailStatus == EmailState.READY || emailStatus == EmailState.LOADING ? 'bg-white hover:bg-neutral-400' : emailStatus == EmailState.SUCCESS ? 'text-white bg-green-900' : ' text-white bg-red-900'">
