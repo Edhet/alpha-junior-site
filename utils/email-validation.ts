@@ -30,5 +30,5 @@ export function validString(s: string, size: 'sm' | 'bg'): string {
 }
 
 export function getBudgetOptions() {
-    return ["Mais de 10.000", "Mais de 5.000", "Mais de 2.500", "Menos de 2.500"]
+    return ["Mais de R$10.000", "Mais de R$5.000", "Mais de R$2.500", "Menos de R$2.500"]
 }
