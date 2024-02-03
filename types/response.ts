@@ -1,5 +1,5 @@
 export default interface Response {
-    code: string
-    msg: string
-    timestamp: number
+    error: string
+    code: number
+    message: string
 }

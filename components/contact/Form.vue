@@ -6,23 +6,32 @@ const opcoesOrcamento = getBudgetOptions()
 let email: Email = { from: "", subject: "", text: "", budget: "Mais de 10.000", academic: false }
 let errorMessages: any = ref({ from: "", subject: "", text: "" })
 
+enum EmailState { READY, LOADING, SUCCESS, ERROR }
+
+let emailStatus = ref(EmailState.READY)
+let responseMessage = ref("")
+
 async function sendEmail() {
-    errorMessages.value = { 
+    errorMessages.value = {
         from: validEmail(email.from),
         subject: validString(email.subject, 'sm'),
         text: validString(email.text, 'bg')
     }
-    
-    if (errorMessages.from || errorMessages.subject || errorMessages.text) 
-        return
 
-    await $fetch('/api/contato', {
+    if (errorMessages.value.from || errorMessages.value.subject || errorMessages.value.text) {
+        return
+    }
+
+    emailStatus.value = EmailState.LOADING
+    const response = await $fetch('/api/contato', {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(email)
     })
-    .catch(e => console.log("erro"))
-    .then(r => console.log(r))
+
+    responseMessage.value = response.message
+    emailStatus.value = response.code == 200 ? EmailState.SUCCESS : EmailState.ERROR
+    setTimeout(() => emailStatus.value = EmailState.READY, 4000)
 }
 </script>
 
@@ -92,7 +101,10 @@ async function sendEmail() {
                 <label class="ml-2 cursor-pointer font-bold" for="academic">Sou de instituição acadêmica</label>
             </div>
         </div>
-        
-        <button class="my-4 py-2 px-4 rounded-3xl text-black bg-white hover:bg-neutral-400 transition-all">Enviar mensagem</button>
+        <button class="my-4 py-2 px-4 rounded-3xl transition-all text-black" :class="emailStatus == EmailState.READY || emailStatus == EmailState.LOADING ? 'bg-white hover:bg-neutral-400' : emailStatus == EmailState.SUCCESS ? 'text-white bg-green-900' : ' text-white bg-red-900'">
+            {{ emailStatus == EmailState.LOADING ? "" : emailStatus == EmailState.READY ? 'Enviar mensagem' : responseMessage }}
+            <div v-if="emailStatus == EmailState.LOADING" class="inline-block h-5 w-5 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]">
+            </div>
+        </button>
     </form>
 </template>
